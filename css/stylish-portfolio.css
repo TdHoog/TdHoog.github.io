@@ -19,7 +19,7 @@ body {
 .text-vertical-center {
     display: table-cell;
     text-align: center;
-    vertical-align: 5rem;
+    vertical-align: 250rem;
 }
 
 .text-vertical-center h1 {
