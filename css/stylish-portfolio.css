@@ -36,7 +36,7 @@ body {
     display: table-cell;
     text-align: center;
     vertical-align: bottom;
-    padding: 5%;
+    padding-bottom: 25px;
     font-weight: 100;
 }
 
@@ -49,8 +49,9 @@ body {
 /* Custom Button Styles */
 
 .btn-dark {
-    margin: 50;
-    border-radius: 0;
+    margin: auto;
+    padding: 0, 10%;
+    border-radius: 3rem;
     color: #fff;
     background-color: rgba(0,0,0,0.4);
 }
@@ -63,7 +64,7 @@ body {
 }
 
 .btn-light {
-    border-radius: 0;
+    border-radius: 3rem;
     color: #333;
     background-color: rgb(255,255,255);
 }
@@ -87,30 +88,41 @@ hr.small {
     z-index: 1000;
     position: fixed;
     right: 0;
-    width: 250px;
+    width: 25vw;
     height: 100%;
-    transform: translateX(250px);
+    transform: translateX(25vw);
     overflow-y: auto;
     background: #222;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
+    opacity: 0.9;
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -ms-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+}
+
+#signature {
+    width: 10vw;
+    height: auto;
+    min-width: 200px;
 }
 
 .sidebar-nav {
     position: absolute;
-    top: 0;
-    width: 250px;
+    top: 5vw;
+    width: 40vw;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .sidebar-nav li {
-    text-indent: 20px;
+    text-indent: 0;
     line-height: 40px;
+    width: 20vw;
+    min-width: 200px;
+    text-align: center;
+    margin: auto;
 }
 
 .sidebar-nav li a {
@@ -131,9 +143,8 @@ hr.small {
 }
 
 .sidebar-nav > .sidebar-brand {
-    height: 55px;
     font-size: 18px;
-    line-height: 55px;
+    line-height: 25vw;
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -152,18 +163,23 @@ hr.small {
     right: 0;
 }
 
+#menu-close {
+    visibility: hidden;
+}
+
 #sidebar-wrapper.active {
-    right: 250px;
-    width: 250px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
+    right: 55vw;
+    width: 40vw;
+    min-width: 300px;
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -ms-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
 }
 
 .toggle {
-    margin: 5px 5px 0 0;
+    margin: 25px 25px 0 0;
 }
 
 /* Header */
@@ -187,10 +203,17 @@ hr.small {
     min-height: 100%;
 }
 
+#knop2 {
+    position: absolute;
+    top: 80vh;
+}
+
 /* Services */
 
 .services {
     padding: 50px 0;
+    height: 100%;
+    background: linear-gradient(#f000ff, #4168a8);
 }
 
 .service-item {
@@ -214,16 +237,23 @@ hr.small {
 /* Portfolio */
 
 .portfolio {
+    margin: auto;
     padding: 50px 0;
     min-height: 100%;
 }
 
 .portfolio-item {
-    margin-bottom: 30px;
+    margin: auto;
+    padding: 30px;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    display: block;
 }
 
 .img-portfolio {
-    margin: 0 auto;
+    min-width: 500px;
+    min-height: 333px;
 }
 
 .img-portfolio:hover {
@@ -264,7 +294,8 @@ footer {
 
 #to-top {
   display: none;
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
+  position: absolute;
+  margin: auto;
+  bottom: 25px;
+  right: 25px;
 }
