@@ -13,21 +13,37 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Lato',"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-vertical-bottom {
+    display: table-cell;
+    text-align: center;
+    vertical-align: bottom;
+    padding: 5%;
+    font-weight: 100;
+}
+
+.text-vertical-center h1 {
+.text-vertical-bottom h1 {
+    margin: 0;
+    padding: 0;
+    font-size:calc(55px + 1.5vw);
+    font-weight: 100;
 }
 
 .text-vertical-center {
     display: table-cell;
     text-align: center;
     vertical-align: bottom;
-    padding: 20%;
+    padding: 5%;
+    font-weight: 100;
 }
 
 .text-vertical-center h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 4.5em;
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(55px + 1.5vw);
+    font-weight: 100;    
 }
 
 /* Custom Button Styles */
@@ -167,7 +183,8 @@ hr.small {
 /* About */
 
 .about {
-    padding: 50px 0;
+    padding-top: 50px;
+    min-height: 100%;
 }
 
 /* Services */
@@ -185,9 +202,9 @@ hr.small {
 .callout {
     display: table;
     width: 100%;
-    height: 400px;
+    height: 100%;
     color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
+    background: url(../img/beeld1.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -198,6 +215,7 @@ hr.small {
 
 .portfolio {
     padding: 50px 0;
+    min-height: 100%;
 }
 
 .portfolio-item {
